@@ -78,3 +78,6 @@ console.log(localStorage.getItem('product'));
 localStorage.removeItem('name');
 localStorage.clear();
 console.log('hello world');
+
+
+console.log('this is new change');
