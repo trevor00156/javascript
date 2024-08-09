@@ -80,4 +80,27 @@ localStorage.clear();
 console.log('hello world');
 
 
-console.log('this is new change');
+
+// this function gives greeting according the time changes 
+
+function greeting(personname ='Dear'){
+
+ let date= new Date();
+ let hours= date.getHours();
+ let heading= document.querySelector('#greeting');
+ 
+ if(hours>5 && hours<12){
+  heading.innerText = `good morning, ${personname}  `;
+
+ }else if(hours>12 && hours<18){
+
+  heading.innerText = `good Afternoon, ${personname} `;
+ }else{
+
+  heading.innerText = `good night, ${personname} `;
+ }
+
+
+}
+
+greeting('rohan');  
