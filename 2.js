@@ -77,3 +77,4 @@ console.log(localStorage.getItem('product'));
 
 localStorage.removeItem('name');
 localStorage.clear();
+console.log('hello world');
