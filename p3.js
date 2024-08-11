@@ -1,9 +1,12 @@
-let nooftimesbuttonclicked=0;
+// below expression can get value of number of times button clicked from local storage ,if not found it can take other value 0.
+
+let nooftimesbuttonclicked=localStorage.getItem('nooftimesbuttonclicked')||0;
 
 //this function checks how many times button pressed and change the color of number based on whether it is even or odd.
 //even= green , odd=  red.
-function buttonpressed(){
+function buttonpressed(){  // this check how many times button pressed.
   nooftimesbuttonclicked++;
+  localStorage.setItem('nooftimesbuttonclicked',nooftimesbuttonclicked);
   updatebutton();
 
 
@@ -32,3 +35,5 @@ function updatebutton() {
 }
 
 updatebutton();
+
+
